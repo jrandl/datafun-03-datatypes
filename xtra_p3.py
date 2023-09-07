@@ -19,8 +19,12 @@ from util_datafun_logger import setup_logger
 # Call the setup_logger function to create a logger and get the log file name
 logger, logname = setup_logger(__file__)
 
+longwordset1 = None
+longwordset2 = None
+longwords = None
 
 def compare_two_plays():
+    global longwordset1, longwordset2, longwords
     ''' This function compares two plays by Shakespeare.'''
     logger.info("Calling compare_two_plays()")
         
@@ -48,12 +52,12 @@ def compare_two_plays():
     # hint: use sorted() to sort the list
     # hint: use set() to remove duplicates
     # name them wordset1 and wordset2
-    wordset1 = set()  # TODO fix this line
-    wordset2 = set()  # TODO fix this line
+    wordset1 = set(sorted(wordlist1))
+    wordset2 = set(sorted(wordlist2))
 
 
     # initialize a variable maxlen = 10
-    maxlen = 1  # TODO fix this line
+    maxlen = 10  
 
     # use a list comprension to get a list of words longer than 10
     # for word in wordset1
@@ -65,31 +69,29 @@ def compare_two_plays():
     # hint: use set()
     # name them longwordset1 and longwordset2
 
-    longwordset1 = set()  # TODO: fix this line
-    longwordset2 = set()  # TODO: fix this line
+    longwordset1 = set([word for word in wordset1 if len(word) > maxlen])
+    longwordset2 = set([word for word in wordset2 if len(word) > maxlen])
 
     # find the intersection of the two sets
     # that is, the words in both longwordset1 1 & longwordset2
     # name this variable longwords
     longwords = longwordset1 & longwordset2
 
-    # print the length of the sets and the list
-    print(len(longwordset1))
-    print(len(longwordset2))
-    print(len(longwords))
-    print()
-    print(f"{sorted(longwords) = }")
-    print()
+    # logger.info the length of the sets and the list
+    logger.info(f"Length of longwordset1: {len(longwordset1)}")
+    logger.info(f"Length of longwordset2: {len(longwordset2)}")
+    logger.info(f"Length of longwords: {len(longwords)}")
+    logger.info(f"Sorted longwords: {sorted(longwords)}")
 
     # check your work
-    print("TESTING...if nothing prints before the testing is done, you passed!")
+    logger.info("TESTING...if nothing logger.infos before the testing is done, you passed!")
     doctest.testmod()
-    print("TESTING DONE")
+    logger.info("TESTING DONE")
 
 def show_log():
-    """Read log file and print it to the terminal"""
+    """Read log file and logger.info it to the terminal"""
     with open(logname, "r") as file_wrapper:
-        print(file_wrapper.read())
+        logger.info(file_wrapper.read())
 
 
 # -------------------------------------------------------------
