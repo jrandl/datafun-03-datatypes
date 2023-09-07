@@ -1,0 +1,23 @@
+2023-09-06 21:13:35,133 =============================================================
+2023-09-06 21:13:35,133 =============================================================
+2023-09-06 21:13:35,133 Today is 2023-09-06 at 09:13 PM
+2023-09-06 21:13:35,158 This file is running on: nt Windows 10
+2023-09-06 21:13:35,159 The Python version is: 3.11.4
+2023-09-06 21:13:35,159 The active conda environment is:  None
+2023-09-06 21:13:35,159 The active pip environment is:    None
+2023-09-06 21:13:35,159 The active environment path is:   C:\Python311
+2023-09-06 21:13:35,159 The current working directory is: C:\Users\Josiah Randleman\Documents\Northwest\datafun-03-datatypes
+2023-09-06 21:13:35,159 This source file is in:           c:\Users\Josiah Randleman\Documents\Northwest\datafun-03-datatypes
+2023-09-06 21:13:35,159 =============================================================
+2023-09-06 21:13:35,159 =============================================================
+2023-09-06 21:13:35,159 Programming Language: ('Python', 'Dynamically Typed', 'Interpreted')
+2023-09-06 21:13:35,159 Database: ('MySQL', 'RDBMS', 'Open Source')
+2023-09-06 21:13:35,159 Framework: ('Django', 'Python', 'Web Development')
+2023-09-06 21:13:35,159 ---------------------------------
+2023-09-06 21:13:35,159 Python Libraries: {'Django', 'Pandas', 'Numpy'}
+2023-09-06 21:13:35,159 JavaScript Libraries: {'Angular', 'React', 'Vue'}
+2023-09-06 21:13:35,159 Common Libraries: set()
+2023-09-06 21:13:35,159 All Libraries: {'Django', 'Pandas', 'Angular', 'React', 'Vue', 'Numpy'}
+2023-09-06 21:13:35,159 ---------------------------------
+2023-09-06 21:13:35,160 Word Frequency: {'fish': 3, 'red': 1, 'two': 1, 'One': 1, 'blue': 1, 'fish.': 1}
+2023-09-06 21:13:35,160 ---------------------------------

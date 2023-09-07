@@ -44,7 +44,7 @@ def step2():
 
 def step3():
     try:
-         with open(r"C:\Users\Josiah Randleman\Documents\Northwest\datafun-03-datatypes\text_names_in.txt", 'r') as file:
+         with open("text_names_in.txt", 'r') as file:
                 text = file.read()
                 words = text.split()
                 unique_words = set(words)
